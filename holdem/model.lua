@@ -3,13 +3,6 @@ require 'image'   -- for image transforms
 require 'nn'      -- provides all sorts of trainable modules/layers
 
 -- 14-class problem
-noutputs = 14
-
--- input dimensions
-nfeats = 3
-width = 32
-height = 32
-ninputs = nfeats*width*height
 
 -- number of hidden units (for MLP only):
 nhiddens = ninputs / 2
