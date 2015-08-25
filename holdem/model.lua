@@ -16,12 +16,13 @@ normkernel = image.gaussian1D(7)
 -- if opt.model == 'linear' then
 
    -- Simple linear model
+--[[
    model = nn.Sequential()
    model:add(nn.Reshape(ninputs))
    model:add(nn.Linear(ninputs,noutputs))
+--]]
 
---[[
-elseif opt.model == 'mlp' then
+--elseif opt.model == 'mlp' then
 
    -- Simple 2-layer neural network, with tanh hidden units
    model = nn.Sequential()
@@ -29,7 +30,6 @@ elseif opt.model == 'mlp' then
    model:add(nn.Linear(ninputs,nhiddens))
    model:add(nn.Tanh())
    model:add(nn.Linear(nhiddens,noutputs))
---]]
 --end
 
 print(model)

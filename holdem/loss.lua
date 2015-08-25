@@ -1,8 +1,6 @@
 require 'torch'   -- torch
 require 'nn'      -- provides all sorts of loss functions
 
-noutputs = 14
-
 --if opt.loss == 'margin' then
     --criterion = nn.MultiMarginCriterion()
 

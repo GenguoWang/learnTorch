@@ -20,7 +20,6 @@ local data = {}
 for k,dirpath in ipairs(dirs) do
     local class = paths.basename(dirpath)
     print(class)
-    table.insert(className,class)
     local idx = tablex.find(className,class)
     print(dirpath)
     local imgFiles = dir.getfiles(dirpath)

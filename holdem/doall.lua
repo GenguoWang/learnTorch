@@ -8,13 +8,15 @@ dofile("loss.lua")
 dofile("train.lua")
 dofile("test.lua")
 print("===train")
-local i = 100
-while true do
+local i = 10
+while i>0 do
+        if cmd == "n" then break end
+    train()
+    test()
+    i=i-1
     if(i==0) then
-        i=10
-        os.execute("sleep 3")
+        io.write("more loops [number]:")
+        i = io.read("*number")
+        if not i then break end
     end
-train()
-test()
-i=i-1
 end
