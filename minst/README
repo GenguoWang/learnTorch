@@ -1,0 +1,13 @@
+1. createDataFile.lua
+--Usage: th createDataFile.lua dataPath labelPaht train/test
+--Description: convert the binary mnist data file into torch7 format, the binary file can be downloaded from 
+--minst: http://yann.lecun.com/exdb/mnist/
+--output: train.t7 or test.t7
+
+2. doall.lua
+--train and test. 
+--need train.t7 test.t7
+
+3. benchmark.lua
+--test for forward and backward time
+--need train.t7 test.t7
